@@ -1,13 +1,13 @@
-provider "aws" {
-  region = var.aws_region
+# provider "aws" {
+#   region = var.aws_region
 
-  default_tags {
-    tags = {
-      NominalCode = "5410"
-    }
-  }
-}
+#   default_tags {
+#     tags = {
+#       NominalCode = "5410"
+#     }
+#   }
+# }
 
-terraform {
-  backend "http" {}
-}
+# terraform {
+#   backend "http" {}
+# }
