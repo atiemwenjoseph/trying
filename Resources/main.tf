@@ -1,7 +1,7 @@
 ######## VPC ########
 resource "aws_vpc" "sandboxvpc" {
   cidr_block       = var.block   
-  availability_zones = var.aws_regions
+  #availability_zones = var.aws_regions
   instance_tenancy = "default"
   tags = {
     Name = "Sandbox VPC"
@@ -12,7 +12,7 @@ resource "aws_vpc" "sandboxvpc" {
 resource "aws_subnet" "subsandbox" {
   vpc_id     = aws_vpc.sandboxvpc.id
   cidr_block = var.sub_block
-  availability_zones = var.aws_regions
+  #availability_zones = var.aws_regions
   tags = {
     Name = "Sandbox Subnet"
   }
